@@ -10,6 +10,7 @@ function greet(name) {
 }
 
 console.log(greet("Ana"));
+console.log(greet("Bob"));
 
 // TODO 1: call greet with your own name and log what it gives back.
 
@@ -37,13 +38,13 @@ function playRiff(start) {
   synth.triggerAttackRelease("A4", "8n", start + 6.5);
   synth.triggerAttackRelease("A4", "8n", start + 7);
   synth.triggerAttackRelease("A4", "8n", start + 7.5);
-
   // TODO 3: add a fourth note at start + 1.5
 }
 
 // The whole song, timed from start.
 function song(start) {
   playRiff(start);
+  playRiff(start + 2);
   // TODO 4: call playRiff again, two seconds after the first one
 }
 
