@@ -22,6 +22,7 @@ const synth = new Tone.Synth().toDestination();
 // Plays three notes, timed from start.
 // TODO 2: change the notes to ones you like. A note is A to G, then a number: "D4", "A3".
 function playRiff(start) {
+<<<<<<< HEAD
   synth.triggerAttackRelease("D4", "8n", start);
   synth.triggerAttackRelease("D4", "8n", start + 0.5);
   synth.triggerAttackRelease("D4", "8n", start + 1);
@@ -38,13 +39,22 @@ function playRiff(start) {
   synth.triggerAttackRelease("A4", "8n", start + 6.5);
   synth.triggerAttackRelease("A4", "8n", start + 7);
   synth.triggerAttackRelease("A4", "8n", start + 7.5);
+=======
+  synth.triggerAttackRelease("C4", "8n", start);
+  synth.triggerAttackRelease("E4", "8n", start + 0.5);
+  synth.triggerAttackRelease("G4", "8n", start + 1);
+>>>>>>> 714b5195b49f18fc8c0d9f950628555e4ef0e516
   // TODO 3: add a fourth note at start + 1.5
 }
 
 // The whole song, timed from start.
 function song(start) {
+<<<<<<< HEAD
   playRiff(start);
   playRiff(start + 2);
+=======
+  playRiff(start + 5);
+>>>>>>> 714b5195b49f18fc8c0d9f950628555e4ef0e516
   // TODO 4: call playRiff again, two seconds after the first one
 }
 
